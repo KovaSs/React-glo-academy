@@ -7,6 +7,8 @@ import ShopItem from '../../shopItem';
 import GotService from '../../../server/getService';
 import SearchPanel from '../../searchPanel';
 import FilterPanel from '../../filterPanel';
+import SpinnerLoad from '../../spinner';
+import ErrorBlock from '../../error';
 
 class OurCoffePage extends Component {
 
@@ -15,28 +17,39 @@ class OurCoffePage extends Component {
     this.state = {
       shopData: null,
       term: '',
-      filter: 'all'
+      filter: 'all',
+      loading: true,
+      error: false
     }
   }
 
   gotService = new GotService();
 
   componentDidMount() {
-    this.gotService.loadJson().then(({coffee}) => {
-      this.setState(() => {
-        return {
-          shopData: coffee
-        }
+    this.gotService.loadJson()
+      .then(({coffee}) => {
+        this.setState(() => {
+          return {
+            shopData: coffee,
+            loading: false
+          }
+        })
       })
-    })
+      .catch((res) => {
+        console.log(res);
+        this.setState({
+          error: true,
+          loading: false
+        });
+      })
   }
 
   renderItems = (data) => {
     return data.map((item) => {
       return (
         <ShopItem
-          id={item.id}
           key={item.id}
+          id={item.id}
           name={item.name}
           url={item.url}
           price={item.price}
@@ -85,9 +98,10 @@ class OurCoffePage extends Component {
   }
 
   render() {
-    const {shopData, term, filter} = this.state;
-
-    let content = shopData ? this.filterPosts(this.searchPost((this.renderItems(shopData)), term), filter) :[];
+    const {shopData, term, filter, error, loading} = this.state;
+    const errorMsg = error ? <ErrorBlock/> : null;
+    const spinner = loading ? <SpinnerLoad /> : null;
+    const content = !(loading || error) ? this.filterPosts(this.searchPost((this.renderItems(shopData)), term), filter) : null;
 
     return (
       <>
@@ -124,6 +138,8 @@ class OurCoffePage extends Component {
             <div className="row">
               <div className="col-lg-10 offset-lg-1">
                 <div className="shop__wrapper">
+                  {errorMsg}
+                  {spinner}
                   {content}
                 </div>
               </div>

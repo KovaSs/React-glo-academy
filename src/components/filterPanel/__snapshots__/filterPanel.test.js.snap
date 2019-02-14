@@ -1,0 +1,464 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <FilterPanel/> FilterPanel has been rendered 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FilterPanel />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="shop__filter"
+      >
+        <div
+          className="shop__filter-label"
+        >
+          Or filter
+        </div>
+        <div
+          className="shop__filter-group"
+        >
+          <button
+            className="shop__filter-btn "
+            onClick={[Function]}
+            type="button"
+          >
+            All
+          </button>
+          <button
+            className="shop__filter-btn "
+            onClick={[Function]}
+            type="button"
+          >
+            Brazil
+          </button>
+          <button
+            className="shop__filter-btn "
+            onClick={[Function]}
+            type="button"
+          >
+            Kenya
+          </button>
+          <button
+            className="shop__filter-btn "
+            onClick={[Function]}
+            type="button"
+          >
+            Columbia
+          </button>
+        </div>
+      </div>,
+      "className": "col-lg-5",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="shop__filter-label"
+          >
+            Or filter
+          </div>,
+          <div
+            className="shop__filter-group"
+          >
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              All
+            </button>
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              Brazil
+            </button>
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              Kenya
+            </button>
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              Columbia
+            </button>
+          </div>,
+        ],
+        "className": "shop__filter",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Or filter",
+            "className": "shop__filter-label",
+          },
+          "ref": null,
+          "rendered": "Or filter",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                All
+              </button>,
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                Brazil
+              </button>,
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                Kenya
+              </button>,
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                Columbia
+              </button>,
+            ],
+            "className": "shop__filter-group",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "all",
+              "nodeType": "host",
+              "props": Object {
+                "children": "All",
+                "className": "shop__filter-btn ",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "All",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "brazil",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Brazil",
+                "className": "shop__filter-btn ",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Brazil",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "kenya",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Kenya",
+                "className": "shop__filter-btn ",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Kenya",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "columbia",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Columbia",
+                "className": "shop__filter-btn ",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Columbia",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="shop__filter"
+        >
+          <div
+            className="shop__filter-label"
+          >
+            Or filter
+          </div>
+          <div
+            className="shop__filter-group"
+          >
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              All
+            </button>
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              Brazil
+            </button>
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              Kenya
+            </button>
+            <button
+              className="shop__filter-btn "
+              onClick={[Function]}
+              type="button"
+            >
+              Columbia
+            </button>
+          </div>
+        </div>,
+        "className": "col-lg-5",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="shop__filter-label"
+            >
+              Or filter
+            </div>,
+            <div
+              className="shop__filter-group"
+            >
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                All
+              </button>
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                Brazil
+              </button>
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                Kenya
+              </button>
+              <button
+                className="shop__filter-btn "
+                onClick={[Function]}
+                type="button"
+              >
+                Columbia
+              </button>
+            </div>,
+          ],
+          "className": "shop__filter",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Or filter",
+              "className": "shop__filter-label",
+            },
+            "ref": null,
+            "rendered": "Or filter",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="shop__filter-btn "
+                  onClick={[Function]}
+                  type="button"
+                >
+                  All
+                </button>,
+                <button
+                  className="shop__filter-btn "
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Brazil
+                </button>,
+                <button
+                  className="shop__filter-btn "
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Kenya
+                </button>,
+                <button
+                  className="shop__filter-btn "
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Columbia
+                </button>,
+              ],
+              "className": "shop__filter-group",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "all",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "All",
+                  "className": "shop__filter-btn ",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "All",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": "brazil",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Brazil",
+                  "className": "shop__filter-btn ",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Brazil",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": "kenya",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Kenya",
+                  "className": "shop__filter-btn ",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Kenya",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": "columbia",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Columbia",
+                  "className": "shop__filter-btn ",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Columbia",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

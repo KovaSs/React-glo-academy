@@ -4,48 +4,64 @@ import Footer from '../../footer';
 import beansLogoDark from '../../../images/Beans_logo_dark.svg';
 import GotService from '../../../server/getService';
 import BestItem from '../../bestItem';
+import ErrorBlock from '../../error';
+import SpinnerLoad from '../../spinner';
 
 
 class MainPage extends Component {
 
-  
   constructor(props) {
     super(props);
     this.state = {
-      bestData: null
+      bestData: null,
+      loading: true,
+      error: false
     }
   }
 
   gotService = new GotService();
 
   componentDidMount() {
-    this.gotService.loadJson().then(({coffee}) => {
-      this.setState(() => {
-        const bestsellers = coffee.filter((item) => item.best === true)
-        return {
-          bestData: bestsellers
-        }
+    this.gotService.loadJson()
+      .then(({coffee}) => {
+        this.setState(() => {
+          const bestsellers = coffee.filter((item) => item.best === true)
+          return {
+            bestData: bestsellers,
+            loading: false
+          }
+        })
       })
+      .catch((res) => {
+        console.log(res);
+        this.setState({
+          error: true,
+          loading: false
+        });
+      })
+  }
+
+  renderItems = (items) => {
+    // this.foo.bar = 0;
+    return items.map((item) => {
+      return (
+        <BestItem
+          key={item.id}
+          id={item.id}
+          name={item.name}
+          url={item.url}
+          price={item.price}
+        />
+      )
     })
   }
 
   render(){
-    const {bestData} = this.state;
 
-    let content = [];
-    if (bestData) {
-      content = bestData.map((item) => {
-        return (
-          <BestItem
-            key={item.id}
-            id={item.id}
-            name={item.name}
-            url={item.url}
-            price={item.price}
-          />
-        )
-      })
-    }
+    const {bestData, error, loading} = this.state;
+    const errorMsg = error ? <ErrorBlock/> : null;
+    const spinner = loading ? <SpinnerLoad/> : null;
+    const content = !(loading || error) ? this.renderItems(bestData) : null;
 
     return (
       <>
@@ -80,6 +96,8 @@ class MainPage extends Component {
             <div className="row">
               <div className="col-lg-10 offset-lg-1">
                 <div className="best__wrapper">
+                  {errorMsg}
+                  {spinner}
                   {content}
                 </div>
               </div>

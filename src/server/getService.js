@@ -5,15 +5,23 @@ class GetService {
   }
 
   loadJson = async () => {
-    const res = await fetch(this._base);
+    return await fetch(this._base)
+      .then((res) => res.json())
+      .catch((err) => err.status)
+  }
 
-    if(!res.ok) {
-      throw new Error(`Could not fetch ${this._base}, status: ${res.status} `);
-    }
-
-    const data = await res.json();
-    
-    return data;
+  uploadJson = async (data) => {
+    // return await fetch(this._base, {
+    return await fetch("http://localhost:3001/contacts", {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {"Content-Type": "application/json"}
+    })
+    .then((res) => {
+      if (!res.ok) {
+        throw res.status
+      }
+    })
   }
 
 }

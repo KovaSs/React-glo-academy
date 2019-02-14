@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 
-
 class FilterPanel extends Component {
   constructor(props) {
     super(props);

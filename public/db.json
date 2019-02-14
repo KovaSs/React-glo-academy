@@ -46,6 +46,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet."
     },
     {
+      "id": 6,
       "name": "Organic Coffee One Cup",
       "country": "Columbia",
       "url": "https://images-na.ssl-images-amazon.com/images/I/51M2fmEXTIL.jpg",
@@ -89,5 +90,27 @@
       "best": false
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "userName": "Mila",
+      "userEmail": "laudylim@gmail.com",
+      "userPhone": "+7(895) 086-2156",
+      "userMessage": "Hello",
+      "id": 1
+    },
+    {
+      "userName": "Mila",
+      "userEmail": "laudylim@gmail.com",
+      "userPhone": "+7(895) 086-2156",
+      "userMessage": "from build with http-server",
+      "id": 2
+    },
+    {
+      "userName": "asdasdas",
+      "userEmail": "laudylim@gmail.com",
+      "userPhone": "+7(895) 086-2156",
+      "userMessage": "zx\\zx\\z",
+      "id": 3
+    }
+  ]
 }
